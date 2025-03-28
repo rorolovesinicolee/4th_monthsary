@@ -127,7 +127,7 @@ export default function MusicPlayer() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-light mb-4">Music</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-10">This song reminds me of you.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-10">This is the song I used to play all the time when our story was just beginning.</p>
 
           <div className="max-w-md mx-auto">
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
@@ -146,8 +146,7 @@ export default function MusicPlayer() {
                 <p className="text-gray-500 dark:text-gray-400 text-center text-sm mb-6">Delorians</p>
 
                 {/* Audio element with loop attribute */}
-                <audio ref={audioRef} src="/assets/album-song/album-song.mp3" loop />
-
+                <audio ref={audioRef} src="https://drive.google.com/uc?export=download&id=1HMP0yqI283wlC49_-G58q5pHzT12M-8_" loop />
                 {/* Progress bar */}
                 <div className="h-1 w-full bg-gray-200 dark:bg-gray-700 rounded-full mb-4">
                   <div
