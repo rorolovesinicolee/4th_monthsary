@@ -25,3 +25,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+echo "public/assets/album-song/album-song.mp4" >> .gitignore
+echo "public/assets/video/our-video.mp4" >> .gitignore
