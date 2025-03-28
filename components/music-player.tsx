@@ -146,7 +146,7 @@ export default function MusicPlayer() {
                 <p className="text-gray-500 dark:text-gray-400 text-center text-sm mb-6">Delorians</p>
 
                 {/* Audio element with loop attribute */}
-                <audio ref={audioRef} src="https://drive.google.com/file/d/1HMP0yqI283wlC49_-G58q5pHzT12M-8_/view?usp=sharing" loop />
+                <audio ref={audioRef} src="/assets/album-song/album-song.m4a" loop />
                 {/* Progress bar */}
                 <div className="h-1 w-full bg-gray-200 dark:bg-gray-700 rounded-full mb-4">
                   <div
