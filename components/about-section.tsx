@@ -20,8 +20,8 @@ export default function AboutSection() {
   })
   const [isUnlocked, setIsUnlocked] = useState(false)
 
-  // Target date: March 29, 2025, 6:00 PM
-  const targetDate = new Date("2025-03-29T18:00:00")
+  // Target date: March 29, 2025, 7:00 PM
+  const targetDate = new Date("2025-03-29T19:00:00")
 
   useEffect(() => {
     const calculateTimeRemaining = () => {
@@ -92,22 +92,27 @@ export default function AboutSection() {
           <div className="max-w-2xl mx-auto">
             {/* Love letter image with countdown and lock */}
             <div className="mb-16 relative">
-              <div className={`relative rounded-lg shadow-md overflow-hidden ${!isUnlocked ? "filter blur-lg" : ""}`}>
-                <Image
-                  src="/assets/letter/letters.jpg"
-                  alt="Love Letter"
-                  width={600}
-                  height={800}
-                  className="mx-auto"
-                  unoptimized
-                />
+              <div
+                className={`relative rounded-lg shadow-md overflow-hidden bg-transparent ${!isUnlocked ? "filter blur-lg" : ""}`}
+              >
+                <div className="bg-gradient-to-b from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20 p-4 rounded-lg">
+                  <Image
+                    src="/assets/letter/love-letter.png"
+                    alt="Love Letter"
+                    width={600}
+                    height={800}
+                    className="mx-auto object-contain"
+                    style={{ backgroundColor: "transparent" }}
+                    unoptimized
+                  />
+                </div>
               </div>
 
               {/* Locked overlay */}
               {!isUnlocked && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 rounded-lg">
                   <Lock className="w-16 h-16 text-white mb-4" />
-                  <p className="text-white text-xl font-bold mb-6">Locked Until March 29</p>
+                  <p className="text-white text-xl font-bold mb-6">Locked Until March 29, 7:00 PM</p>
 
                   {/* Countdown timer */}
                   <div className="grid grid-cols-4 gap-4 text-white">
@@ -153,7 +158,7 @@ export default function AboutSection() {
             <div className="flex flex-col items-center">
               <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4">
                 <Image
-                  src="/assets/profile-pic/myprofile.jpg" // Replace with your profile image
+                  src="/assets/profile-pic/myprofile.jpg"
                   alt="Jair Legaspi"
                   fill
                   className="object-cover"

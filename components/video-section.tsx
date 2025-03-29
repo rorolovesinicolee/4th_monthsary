@@ -38,7 +38,7 @@ export default function VideoSection() {
                 ref={videoRef}
                 controls
                 className="w-full h-full object-cover"
-                poster="/assets/video/video-tumbnail.jpg" // Replace with your thumbnail
+                poster="/assets/video/video-thumbnail.png" // Replace with your thumbnail
               >
                 <source src="https://drive.google.com/file/d/1KKrhtoX4E5IxoPLw6oLr3svdetj4ih2s/view?usp=sharing" type="video/mp4" /> {/* Replace with your video */}
                 Your browser does not support the video tag.
