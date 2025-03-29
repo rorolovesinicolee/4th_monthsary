@@ -31,7 +31,8 @@ export default function Home() {
     <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       <Navbar />
 
-      <section className="container mx-auto px-4 py-28 md:py-40">
+
+      <section className="container mx-auto px-4 pt-48 pb-32 md:pt-60 md:pb-40">
         <motion.div
           ref={headerRef}
           initial="hidden"

@@ -87,7 +87,7 @@ export default function AboutSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-light mb-4">By. Roro</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-10">Happy 4th monthsary, love!</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-10">Happy Four-month anniversary, love!</p>
 
           <div className="max-w-2xl mx-auto">
             {/* Love letter image with countdown and lock */}

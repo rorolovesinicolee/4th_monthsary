@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         <div className="text-center mt-2">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-wider">HAPPY 4TH MONTHSARY!</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-wider">HAPPY FOUR-MONTH TOGETHER!</h2>
         </div>
 
         <div className="hidden md:flex items-center justify-center space-x-8 mt-4">
